@@ -16,6 +16,10 @@ api_base_url = "https://api.stagingv3.microgen.id/query/api/v1/" + api_key
 def hello_geek():
     return '<h1>Hello from Flask</h2>'
 
+@app.route('/asd')
+def hello_geek():
+    return '<h1>Hello from test</h2>'
+
 @app.get("/products")
 def getProducts():
     try:
