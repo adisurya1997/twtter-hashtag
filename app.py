@@ -12,9 +12,6 @@ if api_key == "":
 
 api_base_url = "https://dev-bhagaskarash4zl.microgen.id/api" + api_key
 
-@app.route('/')
-def handler():
-    return "<h1>test</h1>"
 @app.post("/products")
 def handler():
     return "<h1>test</h1>"
