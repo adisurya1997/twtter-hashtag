@@ -16,7 +16,7 @@ api_base_url = "https://dev-bhagaskarash4zl.microgen.id/api" + api_key
 def handler():
     return "<h1>test</h1>"
 @app.post("/products")
-def handler():
+def hashtag():
     limit = posts['limit']
     keyword = posts['keyword']
     return keyword
