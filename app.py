@@ -17,6 +17,7 @@ def handler():
     return "<h1>test</h1>"
 @app.post("/products")
 def hashtag():
+    posts = json.loads(request.data)
     limit = posts['limit']
     keyword = posts['keyword']
     return keyword
