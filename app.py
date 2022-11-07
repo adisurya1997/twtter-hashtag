@@ -12,7 +12,7 @@ if api_key == "":
 
 api_base_url = "https://dev-bhagaskarash4zl.microgen.id/api" + api_key
 
-@app.post("/products")
+@app.get("/products")
 def handler():
     return "<h1>test</h1>"
 if __name__ == "__main__":
