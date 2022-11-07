@@ -10,9 +10,12 @@ api_key = os.environ.get("API_KEY", "")
 if api_key == "":
     print("api key is required", file=stderr)
 
-api_base_url = "https://api.stagingv3.microgen.id/query/api/v1/" + api_key
+api_base_url = "https://dev-bhagaskarash4zl.microgen.id/api" + api_key
 
 @app.route('/')
+def handler():
+    return "<h1>test</h1>"
+@app.post("/products")
 def handler():
     return "<h1>test</h1>"
 if __name__ == "__main__":
