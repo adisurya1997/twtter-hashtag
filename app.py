@@ -19,7 +19,7 @@ def handler():
     return "<h1>test</h1>"
 
 @app.post("/products")
-def hashtag(request, jsonify):
+def hashtag():
     try:
         print(request.data)
         posts = json.loads(request.data)
