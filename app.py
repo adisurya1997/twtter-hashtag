@@ -188,7 +188,7 @@ def search():
         return result
 @app.post("/trend")
 def trend():
-     try:
+    try:
         tweets = []
 
         scraper = twitterScrapper.TwitterTrendsScraper()
