@@ -132,9 +132,10 @@ def listpost():
             "error": e
         }
         return result
+    
 @app.post("/search")
 def search():
-        try:
+    try:
         print(request.data)
         posts = json.loads(request.data)
         limit = posts['limit']
@@ -187,7 +188,7 @@ def search():
         return result
 @app.post("/trend")
 def trend():
-        try:
+     try:
         tweets = []
 
         scraper = twitterScrapper.TwitterTrendsScraper()
@@ -212,7 +213,7 @@ def trend():
 
 @app.post("/user")
 def user():
-        try:
+    try:
         print(request.data)
         posts = json.loads(request.data)
         limit = posts['limit']
