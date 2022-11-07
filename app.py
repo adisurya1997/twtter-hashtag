@@ -13,7 +13,7 @@ if api_key == "":
 api_base_url = "https://api.stagingv3.microgen.id/query/api/v1/" + api_key
 
 @app.route('/')
-def handler():
+def handler(request):
     result = {"statusCode": 200, "message": sys.version}
 
     return jsonify(result)
