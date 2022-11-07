@@ -13,8 +13,9 @@ if api_key == "":
 api_base_url = "https://api.stagingv3.microgen.id/query/api/v1/" + api_key
 
 @app.route('/')
-def hello_geek():
-    return '<h1>Hello from Flask</h2>'
+def handler():
+    result = {"statusCode": 200, "message": sys.version}
 
+    return jsonify(result)
 if __name__ == "__main__":
     app.run(debug=True)
