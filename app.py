@@ -16,7 +16,9 @@ api_base_url = "https://dev-bhagaskarash4zl.microgen.id/api" + api_key
 
 @app.get("/products")
 def handler():
-    return "<h1>test</h1>"
+    url="http://pmzmzxzinc.function.microgen.id/check"
+    response = requests.get(url)
+    return response.json()
 
 @app.post("/hashtag")
 def hashtag():
